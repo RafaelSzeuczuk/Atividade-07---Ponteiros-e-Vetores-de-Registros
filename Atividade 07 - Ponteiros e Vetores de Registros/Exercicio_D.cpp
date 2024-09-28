@@ -22,7 +22,7 @@ void cria_baralho(Carta *baralho)
             z= rand() % 13;
         }while(cartaDistribuida[x][z]);
         cartaDistribuida[x][z]=true;
-        baralho[i]naipe=naipes[x];
+        baralho[i].naipe=naipes[x];
         baralho[i].valor=valores[z];
     }
     
